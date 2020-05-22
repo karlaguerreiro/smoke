@@ -1,0 +1,130 @@
+<html>
+<head>
+
+
+<body>
+
+    <form method="post" action="administrador/backclientes/novocliente.php">
+
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for= "nomecli"> Nome </label>
+        <input type=text name="nome" value=" "> <br>
+        </div>
+
+        <div class="campo">
+            <label for ="datanasc"> Data de nascimento:</label>
+            <input type=date name="datanasc" value=""><br>
+        </div>
+
+       <div class="campo">
+            <label for="rg">RG: </label>
+            <input type=text name="rg" value=""><br>
+       </div>
+
+       <div class="campo">
+           <label for="cpf">CPF: </label>
+            <input type="number" name="cpf" value=""><br>
+       </div>   
+       
+       <div class="campo">
+           <label for="telcli">Telefone:</label>
+            <input type="number" name="telcli" value=""><br>
+       </div>
+
+        <input type="submit" class="enviar" name ="enviar"  value="enviar">
+      
+    </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>Dados de Endereço</legend>
+        <table cellspacing="10">
+
+            <tr>
+                <td>
+                    <label for="rua">Rua:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="rua">
+                </td>
+                <td>
+                    <label for="numero">Numero:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="numero" size="4">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bairro">Bairro: </label>
+                </td>
+                <td align="left">
+                    <input type="text" name="bairro">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="estado">Estado:</label>
+                </td>
+                <td align="left">
+                    <select name="estado">
+                        <option value="ac">AC</option>
+                        <option value="al">AL</option>
+                        <option value="am">AM</option>
+                        <option value="ap">AP</option>
+                        <option value="ba">BA</option>
+                        <option value="ce">CE</option>
+                        <option value="df">DF</option>
+                        <option value="es">ES</option>
+                        <option value="go">GO</option>
+                        <option value="ma">MA</option>
+                        <option value="mt">MT</option>
+                        <option value="ms">MS</option>
+                        <option value="mg">MG</option>
+                        <option value="pa">PA</option>
+                        <option value="pb">PB</option>
+                        <option value="pr">PR</option>
+                        <option value="pe">PE</option>
+                        <option value="pi">PI</option>
+                        <option value="rj">RJ</option>
+                        <option value="rn">RN</option>
+                        <option value="ro">RO</option>
+                        <option value="rs">RS</option>
+                        <option value="rr">RO</option>
+                        <option value="sc">SC</option>
+                        <option value="se">SE</option>
+                        <option value="sp">SP</option>
+                        <option value="to">TO</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="cidade">Cidade: </label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cidade">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cep">CEP: </label>
+                </td>
+                <td align="left">
+                    <input type="text" name="cep" size="5" maxlength="8">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+        <tr>
+            <td>
+                <input type="submit" class="enviar" name="enviar" value="enviar">
+            </td>
+        </tr>
+
+</body>
+
+</html>
